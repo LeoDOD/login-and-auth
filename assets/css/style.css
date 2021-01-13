@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
 }
 
-.leftSide{
+.leftSide {
     position: absolute;
     left: 0;
     width: 50%;
@@ -24,11 +24,21 @@ body {
     box-sizing: border-box;
 }
 
-.formHeader{
+.rightSide {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: black;
+    border-radius: 8px;
+}
+
+.formHeader {
     text-align: center;
 }
 
-.formContentContainer{
+.formContentContainer {
     margin-top: 15%;
 }
 
@@ -43,4 +53,41 @@ body {
     outline: none;
     border-bottom: 1px solid grey;
     font-size: 12px;
+}
+
+.formLabel {
+    margin: 0 0 15px 20px;
+    padding: 4px;
+    height: 5%;
+    width: 80%;
+    box-sizing: border-box;
+
+}
+
+.submitButton {
+    background: dodgerblue;
+    color: white;
+    margin: 10px 20px;
+    width: 80%;
+    height: 8%;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.orCircle {
+    position: absolute;
+    top: 44%;
+    left: 48.3%;
+    width: 32px;
+    height: 32px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
 }
