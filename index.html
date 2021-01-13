@@ -20,9 +20,9 @@
                     <label for="lastName" class="formLabel">Last Name</label>
                     <input type="text" name="lastName" class="formInput" required>
                     <label for="firstName" class="formLabel">Email Address</label>
-                    <input type="email" name="email" class="formInput" required>
+                    <input type="email" name="email" class="formInput" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <label for="phoneNumber" class="formLabel">Phone Number</label>
-                    <input type="phoneNumber" name="PhoneNumber" class="formInput" required>
+                    <input type="text" name="phoneNumber" onblur="phoneFormat(this.value)" class="formInput" maxlength="10" required pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" />
                     <input type="submit" class="submitButton" name="submitButton" value="Sign Up">
                 </form>
             </div>
@@ -31,6 +31,7 @@
         </div>
         <div class="orCircle">Or</div>
     </div>
+    <script src="assets/script/index.js"></script>
 </body>
 
 </html>
