@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing Up Form</title>
     <link rel="stylesheet" href=".\assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="formContainer">
-        <h1>Sign Up!</h1>
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" class="formInput" required>
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" class="formInput" required>
-        <label for="firstName">Email Address</label>
-        <input type="email" name="email" class="formInput" required>
-        <label for="password">Phone Number</label>
-        <input type="phoneNumber" name="PhoneNumber" class="formInput" required>
-        <input type="submit" name="submitButton" value="Sign Up">
+        <div class="leftSide">
+            <h2 class="formHeader">Sign Up!</h2>
+            <div class="formContentContainer">
+                <form>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" class="formInput" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" class="formInput" required>
+                    <label for="firstName">Email Address</label>
+                    <input type="email" name="email" class="formInput" required>
+                    <label for="password">Phone Number</label>
+                    <input type="phoneNumber" name="PhoneNumber" class="formInput" required>
+                    <input type="submit" name="submitButton" value="Sign Up">
+                </form>
+            </div>
+        </div>
+        <div class="rightSide">
+        </div>
+        <div class="orCircle">Or</div>
     </div>
 </body>
 
